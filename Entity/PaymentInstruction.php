@@ -105,6 +105,16 @@ class PaymentInstruction implements PaymentInstructionInterface
         $this->payments->add($payment);
     }
 
+    /**
+     * set amount
+     *
+     * @param mixed $amount
+     */
+    public function setAmount($amount)
+    {
+        $this->amount = $amount;
+    }
+
     public function getAmount()
     {
         return $this->amount;
